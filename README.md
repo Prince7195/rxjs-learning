@@ -7,6 +7,7 @@ Operators:
  * .map(), .merge() etc,.
 
  Major Operator Types:
+
  1) Combination Operators:
   -> joining of information of multiple observables.
 
@@ -47,3 +48,15 @@ Operators:
 
   => zip - combines multiple observable and createa an observable that collets all values emitted by inner observables and emits in a array.
   Ex: ./zip/app.js
+
+
+ 2) Conditional Operators:
+  -> For use-cases that depend on a specific condition to be met, these operators do the trick.
+
+  Operators Types:
+
+  => defaultIfEmpty - if an observable emits without any next value, this operator will emits a default value.
+  Ex: ./defaultIfEmpty/app.js
+
+  => every - returns an Observable that emits whether or not every item of the source satisfies the condition specified.
+  Ex: ./every/app.js
