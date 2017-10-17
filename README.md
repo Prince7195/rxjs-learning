@@ -184,25 +184,71 @@ Operators Types:
    Operators types:
 
    => buffer - retrns an observable that collects values from source and  then it emits the values when another observable emits
+     Ex: https://github.com/Prince7195/rxjs-learning/tree/master/Transformation%20Operators/buffer/app.js
+
    => bufferCount - Collects values from the source observable, and emits that array only when its size reaches bufferSize.
+     Ex: https://github.com/Prince7195/rxjs-learning/tree/master/Transformation%20Operators/bufferCount/app.js
+
    => bufferTime* - Collects values from the source observable, and emits those arrays periodically in time.
-   => bufferToggle - collects values from the source Observable starting from an emission from openings and ending when the output of closingSelector emits.
-   => bufferWhen - collects values from source observable until closing observable emits and emits the values
-   => concatMap
-   => concatMapTo
-   => exhaustMap
-   => expand
-   => groupBy
-   => map
-   => mapTo
-   => mergeMap
-   => partition
-   => pluck
-   => reduce
-   => scan
-   => switchMap
-   => window
-   => windowCount
-   => windowTime
-   => windowToggle
-   => windowWhen
+     Ex: https://github.com/Prince7195/rxjs-learning/tree/master/Transformation%20Operators/bufferTime/app.js
+
+   => bufferToggle - collects values from the source Observable starting from an emission from openings and ending when the 
+      output of closingSelector emits.
+     Ex: https://github.com/Prince7195/rxjs-learning/tree/master/Transformation%20Operators/bufferToggle/app.js
+
+   => bufferWhen - collects values from source observable until closing observable emits and emits the values.
+     Ex: https://github.com/Prince7195/rxjs-learning/tree/master/Transformation%20Operators/bufferWhen/app.js
+
+   => concatMap - Maps each value to an Observable, then flattens all of these inner Observables using concatAll.
+     Ex: https://github.com/Prince7195/rxjs-learning/tree/master/Transformation%20Operators/concatMap/app.js
+
+   => concatMapTo - same like concatMap, but maps each values to the same inner observable.
+     Ex: https://github.com/Prince7195/rxjs-learning/tree/master/Transformation%20Operators/concatMapTo/app.js
+
+   => exhaustMap - Maps each value to an Observable, then flattens all of these inner Observables using exhaust.
+     Ex: https://github.com/Prince7195/rxjs-learning/tree/master/Transformation%20Operators/exhaustMap/app.js
+
+   => expand - It's similar to mergeMap, but applies the projection function to every source value as well as every output         value. It's recursive.
+     Ex: https://github.com/Prince7195/rxjs-learning/tree/master/Transformation%20Operators/expand/app.js
+
+   => groupBy - Group into observables based on provided value.
+     Ex: https://github.com/Prince7195/rxjs-learning/tree/master/Transformation%20Operators/groupBy/app.js
+
+   => map - Applies a given project function to each value emitted by the source Observable, and emits the resulting values as an Observable.
+     Ex: https://github.com/Prince7195/rxjs-learning/tree/master/Transformation%20Operators/map/app.js
+
+   => mapTo - Like map, but it maps every source value to the same output value every time.
+     Ex: https://github.com/Prince7195/rxjs-learning/tree/master/Transformation%20Operators/mapTo/app.js
+
+   => mergeMap - Map to observable, emit values.
+     Ex: https://github.com/Prince7195/rxjs-learning/tree/master/Transformation%20Operators/mergeMap/app.js
+
+   => partition - Split one observable into two based on provided predicate.
+     Ex: https://github.com/Prince7195/rxjs-learning/tree/master/Transformation%20Operators/partition/app.js
+
+   => pluck - Select particular properties to emit.
+     Ex: https://github.com/Prince7195/rxjs-learning/tree/master/Transformation%20Operators/pluck/app.js
+
+   => reduce - Reduces the values from source observable to a single value that's emitted when the source completes.
+     Ex: https://github.com/Prince7195/rxjs-learning/tree/master/Transformation%20Operators/reduce/app.js
+
+   => scan - It's like reduce, but emits the current accumulation whenever the source emits a value.
+     Ex: https://github.com/Prince7195/rxjs-learning/tree/master/Transformation%20Operators/scan/app.js
+
+   => switchMap - Projects each source value to an Observable which is merged in the output Observable, emitting values only from the most recently projected Observable.
+     Ex: https://github.com/Prince7195/rxjs-learning/tree/master/Transformation%20Operators/switchMap/app.js
+
+   => window - It's like buffer, but emits a nested Observable instead of an array.
+     Ex: https://github.com/Prince7195/rxjs-learning/tree/master/Transformation%20Operators/window/app.js
+
+   => windowCount - It's like bufferCount, but emits a nested Observable instead of an array.
+     Ex: https://github.com/Prince7195/rxjs-learning/tree/master/Transformation%20Operators/windowCount/app.js
+
+   => windowTime - Observable of values collected from source for each provided time span.
+     Ex: https://github.com/Prince7195/rxjs-learning/tree/master/Transformation%20Operators/windowTime/app.js
+
+   => windowToggle - It's like bufferToggle, but emits a nested Observable instead of an array.
+     Ex: https://github.com/Prince7195/rxjs-learning/tree/master/Transformation%20Operators/windowToggle/app.js
+
+   => windowWhen - It's like bufferWhen, but emits a nested Observable instead of an array.
+     Ex: https://github.com/Prince7195/rxjs-learning/tree/master/Transformation%20Operators/windowWhen/app.js
