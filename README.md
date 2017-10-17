@@ -177,3 +177,32 @@ Operators Types:
 
 => throttleTime - Emit latest value when specified duration has passed.
    Ex: https://github.com/Prince7195/rxjs-learning/tree/master/Filtering%20Operators/throttleTime/app.js
+
+   7) Transformation Operators
+    -> Transforming values as they pass through the operator chain is a common task. These operators provide transformation         techniques for nearly any use-case you will encounter.
+
+   Operators types:
+
+   => buffer - retrns an observable that collects values from source and  then it emits the values when another observable emits
+   => bufferCount - Collects values from the source observable, and emits that array only when its size reaches bufferSize.
+   => bufferTime* - Collects values from the source observable, and emits those arrays periodically in time.
+   => bufferToggle - collects values from the source Observable starting from an emission from openings and ending when the output of closingSelector emits.
+   => bufferWhen - collects values from source observable until closing observable emits and emits the values
+   => concatMap
+   => concatMapTo
+   => exhaustMap
+   => expand
+   => groupBy
+   => map
+   => mapTo
+   => mergeMap
+   => partition
+   => pluck
+   => reduce
+   => scan
+   => switchMap
+   => window
+   => windowCount
+   => windowTime
+   => windowToggle
+   => windowWhen
