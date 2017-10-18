@@ -252,3 +252,26 @@ Operators Types:
 
    => windowWhen - It's like bufferWhen, but emits a nested Observable instead of an array.
      Ex: https://github.com/Prince7195/rxjs-learning/tree/master/Transformation%20Operators/windowWhen/app.js
+
+     8) Utility Operators
+      -> From logging, handling notifications, to setting up schedulers, these operators provide helpful utilities in your         observable toolkit.
+
+      Operators Types:
+
+      => do - perform actions or side-effects, such as logging.
+      Ex: https://github.com/Prince7195/rxjs-learning/tree/master/Utility%20Operators/do/app.js
+
+      => delay - Delay emitted values by given time.
+      Ex: https://github.com/Prince7195/rxjs-learning/tree/master/Utility%20Operators/delay/app.js
+
+      => delayWhen - Delay emitted values determined by provided function.
+      Ex: https://github.com/Prince7195/rxjs-learning/tree/master/Utility%20Operators/delayWhen/app.js
+
+      => dematerialize - Converts an Observable of Notification objects into the emissions that they represent.
+      Ex: https://github.com/Prince7195/rxjs-learning/tree/master/Utility%20Operators/dematerialize/app.js
+
+      => let - let me have whole observable
+      Ex: https://github.com/Prince7195/rxjs-learning/tree/master/Utility%20Operators/let/app.js
+
+      => toPromise - Convert observable to promise.
+      Ex: https://github.com/Prince7195/rxjs-learning/tree/master/Utility%20Operators/toPromise/app.js
