@@ -253,8 +253,8 @@ Operators Types:
    => windowWhen - It's like bufferWhen, but emits a nested Observable instead of an array.
      Ex: https://github.com/Prince7195/rxjs-learning/tree/master/Transformation%20Operators/windowWhen/app.js
 
-    8) Utility Operators
-    -> From logging, handling notifications, to setting up schedulers, these operators provide helpful utilities in your         observable toolkit.
+  8) Utility Operators
+  -> From logging, handling notifications, to setting up schedulers, these operators provide helpful utilities in your         observable toolkit.
 
   Operators Types:
 
